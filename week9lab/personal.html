@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    .bg-1 {
+      background-color: #443876 ; 
+      color: #ffffff;
+  }
+  .bg-2 {
+      background-color: #fb6d63; 
+      color: #ffffff;
+    }
+    .bg-3 {
+        background-color: #ffffff; /* White */
+        color: #555555;
+    }
+    .bg-4 {
+    background-color: #2f2f2f;
+    color: #ffffff;
+	}
+	footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fb6d63;
+	}
+    .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+  body{
+  font-family: 'Didact Gothic', sans-serif;
+  }
+  </style>
+
+  <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body id="myPage">
+
+ <nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Me</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#hello">Hello</a></li>
+        <li><a href="#who">Who</a></li>
+        <li><a href="#where">Where</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid bg-1 text-center" id="hello">
+  <h3>Hello</h3>
+  <img src="http://lrgs.ftsm.ukm.my/users/a168219/ena.JPG" width="20%" height="20%" class="img-circle" alt="myself">
+  <h3>I'm Aina</h3>
+</div>
+ <div class="container-fluid bg-2 text-center" id="who">
+  <h3>Who Am I?</h3>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>I'm a girl who fangirling to release stress and sometimes travel to another country for concerts. Listening to pop music, de-stress me and collecting EP/merchandise is my hobby.</p>
+      <img src="neobong.jpg" class="img-responsive" alt="Image" style="display:inline">
+    </div>
+    <div class="col-sm-4">
+      <p>When I need a break I'll binge watching anime. Watching 2D character really help me escape from reality, I mean who does'nt want all that supenatural power right?!</p>
+      <img src="ouma.png" class="img-responsive" alt="Image" style="display:inline">
+    </div>
+    <div class="col-sm-4">
+      <p>I sleep a lot, like all the time. I sleep when I have nothing to do. I sleep to reward myself whenever I achieved something. I would rather sleep at home than hanging out at the mall.</p>
+      <img src="sleep.jpg" class="img-responsive" alt="Image" style="display:inline">
+    </div>
+    </div>
+</div>
+ 
+<div class="container-fluid bg-3 text-center" id="where">
+  <h3>Where To Find Me?</h3>
+  <p>since I don't know what to say here, let me just<br>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <a href="#" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-search"></span> Search
+  </a>
+</div>
+
+<div class="container-fluid" style="background-color: #dddddd" id="contact">
+  <h3 class="text-center">Contact Me</h3>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact me and I'll get back to you when I have time!</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Kuala Lumpur, Malaysia</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +6012 3456789</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> a168219@siswa.ukm.edu.my</p>
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid bg4 text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Copyright © Your Website 2020</p>
+</footer>
+</body>
+</html>

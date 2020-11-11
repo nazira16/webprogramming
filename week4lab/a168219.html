@@ -1,0 +1,77 @@
+  <!--
+  Matric Number: A168219
+  Name: Aina Nazira Binti Mahmod
+  -->
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>Biodata</title>
+  </head>
+  <body><font face="Century Gothic">
+  <h1>Biodata Form</h1>
+  <hr>
+  <form method="post" enctype="multipart/form-data">
+    <table border="1" cellpadding="10">
+      <tr>
+        <td>Name:</td>
+        <td><input type="text" name="name" placeholder="Insert your name" autofocus pattern="[A-Z\s]+" required></td>
+      </tr>
+      <tr>
+        <td>Age:</td>
+        <td><input type="number" name="age" min="19" max="100" step="1" required></td>
+      </tr>
+      <tr>
+        <td>Sex:</td>
+        <td><input type="radio" name="sex" value="male" required>Male<input type="radio" name="sex" value="female">Female</td>
+      </tr>
+      <tr>
+        <td>Address:</td>
+        <td><textarea name="address" cols="50" rows="5" placeholder="Insert your address" required></textarea></td>
+      </tr>
+      <!-- complete the rest of form here -->
+       <tr>
+        <td>Email:</td>
+        <td><input type="email" name="email" placeholder="Insert your email" autofocus required pattern="a[1-9]{6}@siswa.ukm.edu.my"></textarea></td>
+      </tr>
+      <tr>
+        <td>Date of Birth:</td>
+        <td><input type="Date" name="dob"  autofocus required></textarea></td>
+      </tr>
+      <tr>
+        <td>Height:</td>
+        <td><input type="Height" name="height" pattern="[0-9]{3}" placeholder="Insert your height in cm" autofocus required>cm</textarea></td>
+      </tr>
+      <tr>
+        <td>Tel:</td>
+        <td><input type="tel" name="phone" placeholder="(60##)#######" autofocus pattern="\(\60[0-9]{2}\)[0-9]{7}" required></textarea></td>
+      </tr>
+      <tr>
+        <td>My Favourite Color:</td>
+        <td><input type="Color" name="color" required></textarea></td>
+      </tr>
+      <tr>
+        <td>FB/TW/IG:</td>
+        <td><input type="url" name="fbtwig" placeholder="Insert the url" autofocus required></textarea></td>
+      </tr>
+      <tr>
+        <td>My Face Photo</td>
+        <td><input type="file" name="photo" autofocus required></textarea></td>
+      </tr>
+      <tr>
+        <td>My University:</td>
+        <td><select name="university" autofocus required size="6"><option value="" selected >Select</option>
+          <option value="UKM">Universiti Kebangsaan Malaysia</option>
+          <option value="UM">Universiti Malaya</option>
+          <option value="UPM">Universiti Putra Malaysia</option>
+          <option value="USM">Universiti Sains Malaysia</option>
+          <option value="UTM">Universiti Teknologi Malaysia</option></select></textarea></td>
+      </tr>
+    </table>
+  <hr>
+  <input type="hidden" name="matricnum" value="a168219">
+  <input type="submit" name="biodata_form" value="OK">
+  <input type="reset" name="reset" value="Reset">
+  </form>
+   </font>
+  </body>
+  </html>

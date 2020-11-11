@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ex.#JS5</title>
+	<script>
+		function percentage(a,b,c){
+			var marksper = (a+b+c)/300*100;
+			status(marksper);
+		}
+		function status(percent){
+			if (percent>=40)
+				document.write("Student passed with "+percent+"% marks");
+			else
+				document.write("Student failed.")
+		}
+	</script>
+</head>
+<body>
+	<input type="button" value="click me to check answer" onclick="return percentage(70,20,30);">
+</body>
+</html>
